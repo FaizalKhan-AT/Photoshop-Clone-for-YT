@@ -20,6 +20,8 @@ body {
 }
 .img-container img {
   width: 1000px;
+  height: 600px;
+  object-fit: contain;
   box-shadow: 0 0 15px  #000;
 }
 .overlay {
@@ -34,7 +36,7 @@ body {
     brightness(calc(var(--brightness, 100) * 1%))
     sepia(calc(var(--sepia, 0) * 1%)) 
     grayscale(calc(var(--grayscale, 0) * 1%))
-    saturate(calc(var(--saturation, 50) * 1%))
+    saturate(calc(var(--saturation, 100) * 1%))
     contrast(calc(var(--contrast, 100) * 1%))
     invert(calc(var(--invert, 0) * 1%));
   z-index: 1;
@@ -55,4 +57,17 @@ input {
   width: 100%;
   padding: 10px;
   cursor: pointer;
+}
+.fileUpload-btn {
+  height: 40px;
+  position: relative;
+  top: -20px;
+  font-size: 17px;
+  cursor: pointer;
+  background: #3d80be;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  letter-spacing: 1px;
 }

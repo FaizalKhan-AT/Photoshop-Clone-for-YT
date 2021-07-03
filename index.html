@@ -11,9 +11,11 @@
     <div class="container">
       <div class="img-container">
         <div class="overlay"></div>
-        <img src="1.png" alt="image" />
+        <img id="image-container" alt="Select image" />
       </div>
       <div class="sidebar">
+        <input type="file" id="fileUpload" hidden>
+        <button class="fileUpload-btn">Choose File</button>
         <label for="blur">Blur
           <input
             type="range"
@@ -81,7 +83,7 @@
             id="saturation"
             min="0"
             max="500"
-            value="50"
+            value="100"
           /></label>
         <label for="invert">Invert
           <input
